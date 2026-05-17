@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+*.md
+*.pdf
+Portrait.jpg
+Lebenslauf.pdf
+coverage
+.vscode
+.idea

@@ -1,0 +1,127 @@
+export default {
+  nav: {
+    about: 'Profil',
+    skills: 'Skills',
+    experience: 'Erfahrung',
+    education: 'Bildung',
+    languages: 'Sprachen',
+    contact: 'Kontakt',
+    downloadCv: 'Lebenslauf',
+    languageLabel: 'Sprache wählen',
+    primaryNav: 'Hauptnavigation',
+  },
+  hero: {
+    greeting: 'Hallo, ich bin',
+    name: 'Soufian Madi',
+    role: 'Fullstack Software Engineer',
+    location: 'München · Deutschland',
+    tagline: 'Skalierbare Cloud-Webanwendungen mit Vue, TypeScript & Spring Boot.',
+    scrollCue: 'Scroll',
+    swipeCue: 'Wischen',
+    available: 'Verfügbar für neue Projekte',
+  },
+  about: {
+    heading: 'Profil',
+    body: 'Fullstack Softwareentwickler mit mehrjähriger Erfahrung in der Entwicklung skalierbarer, cloudbasierter Webanwendungen. Experte in Java, TypeScript, Spring Boot, Vue.js, REST APIs, Agile Methoden (Scrum, XP), Test Driven Development (TDD) und CI/CD. Erfahrung in cross-funktionalen Teams, Kundenprojekten und der kontinuierlichen Verbesserung von Entwicklungsprozessen. Mentoring und Förderung von Engineering Best Practices gehören zu meinen Kernkompetenzen.',
+    portraitAlt: 'Porträtfoto von Soufian Madi',
+    statYears: 'Jahre Berufserfahrung',
+    statLanguages: 'Sprachen',
+    statClients: 'Mio. Nutzer betreut',
+  },
+  skills: {
+    heading: 'Tech Skills',
+    subheading: 'Bewege den Mauszeiger über einen Skill, um die Strömung zu beeinflussen.',
+    subheadingTouch: 'Berühre einen Skill, um eine Strömung auszulösen.',
+    categories: {
+      languages: 'Programmiersprachen',
+      frameworks: 'Frameworks & Technologien',
+      engineering: 'Software Engineering',
+      cloud: 'Cloud & DevOps',
+      testing: 'Testing & Automatisierung',
+      ai: 'KI-gestützte Entwicklung',
+    },
+  },
+  experience: {
+    heading: 'Berufserfahrung',
+    present: 'Heute',
+    entries: {
+      andrena: {
+        title: 'Fullstack Softwareentwickler',
+        company: 'andrena objects ag',
+        location: 'München, Deutschland',
+        period: '01/2021 — Heute',
+        summary:
+          'Entwicklung einer hochfrequentierten Webplattform für einen Großkonzern mit mehreren Millionen Nutzer:innen — gemeinsam mit mehreren cross-funktionalen Teams.',
+        bullets: [
+          'Entwicklung und Wartung skalierbarer Cloud-Webanwendungen und verteilter Systeme mit Java, Spring Boot, TypeScript, React und Vue.js unter Anwendung von TDD, Clean Code und Extreme Programming (XP).',
+          'Implementierung von REST APIs, CDCs und End-to-End-Tests nach TDD- und Clean-Code-Prinzipien.',
+          'Aufbau und Pflege von CI/CD-Pipelines (GitLab CI) sowie Containerisierung mit Docker.',
+          'Beratung von Kunden in agilen Software-Engineering-Projekten und Mitwirkung in cross-funktionalen Teams.',
+          'Code-Reviews, Unit-Tests und kontinuierliche Verbesserung von Entwicklungsprozessen und -werkzeugen.',
+          'Mitwirkung an Architekturentscheidungen für hochspezialisierte, wartbare Systeme.',
+          'Mentoring neuer Teammitglieder und Förderung von Engineering Best Practices.',
+        ],
+      },
+      bamf: {
+        title: 'Dolmetscher (Arabisch / Deutsch / Englisch)',
+        company: 'Bundesamt für Migration und Flüchtlinge',
+        location: 'Deutschland',
+        period: '11/2016 — 11/2018',
+        summary: 'Parallel zum Studium — Übersetzung in sensiblen behördlichen Anhörungen.',
+        bullets: [
+          'Mündliche und schriftliche Übersetzung zwischen Arabisch, Deutsch und Englisch.',
+          'Unterstützung bei behördlichen Anhörungen und administrativen Verfahren.',
+          'Kommunikation zwischen Behörden und Geflüchteten in sensiblen Gesprächssituationen.',
+        ],
+      },
+    },
+  },
+  education: {
+    heading: 'Bildung & Zertifikate',
+    entries: {
+      bsc: {
+        title: 'Bachelor of Science — Luft- und Raumfahrtinformatik',
+        institution: 'Julius-Maximilians-Universität Würzburg',
+        period: '2016 — 2019',
+      },
+      vue: {
+        title: 'Vue.js Developer Certification',
+        institution: 'certificates.dev',
+        period: '2024',
+      },
+      agile: {
+        title: 'Agile Product Management Weiterbildung',
+        institution: 'andrena objects ag',
+        period: '2024',
+      },
+    },
+  },
+  languages: {
+    heading: 'Sprachen',
+    native: 'Muttersprache',
+    levels: {
+      de: 'Deutsch',
+      ar: 'Arabisch',
+      en: 'Englisch',
+      he: 'Hebräisch',
+    },
+  },
+  interests: {
+    heading: 'Interessen',
+    items: ['Wandern', 'Skifahren', 'Technologie', 'Finanzen', 'Mixology', 'Videospiele'],
+  },
+  contact: {
+    heading: 'Kontakt',
+    subheading: 'Lass uns sprechen — gerne in Deutsch, Englisch oder Arabisch.',
+    emailLabel: 'E-Mail',
+    phoneLabel: 'Telefon',
+    linkedinLabel: 'LinkedIn',
+    addressLabel: 'Standort',
+    copy: 'Kopieren',
+    copied: 'Kopiert',
+    cta: 'Schreib mir eine E-Mail',
+  },
+  motion: {
+    reduced: 'Animationen reduziert',
+  },
+};

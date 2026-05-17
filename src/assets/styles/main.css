@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #05060d;
+  --color-bg-elev: #0a0c18;
+  --color-ink: #e7e9f5;
+  --color-ink-soft: #aab0c8;
+  --color-ink-muted: #6f7596;
+  --color-line: rgba(231, 233, 245, 0.08);
+  --color-accent-cyan: #22d3ee;
+  --color-accent-violet: #a78bfa;
+  --color-accent-teal: #2dd4bf;
+  --color-accent-amber: #f59e0b;
+  --color-accent-pink: #f472b6;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-glow-cyan: 0 0 60px -10px rgba(34, 211, 238, 0.45);
+  --shadow-glow-violet: 0 0 60px -10px rgba(167, 139, 250, 0.45);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: dark;
+    background: transparent;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: clip;
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background: transparent;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.35);
+    color: white;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    font-weight: 600;
+  }
+
+  h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-cyan);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .section {
+    position: relative;
+    padding-block: clamp(5rem, 12vw, 9rem);
+    padding-inline: clamp(1.25rem, 5vw, 4rem);
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-accent-cyan);
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .section-eyebrow::before {
+    content: "";
+    width: 1.25rem;
+    height: 1px;
+    background: currentColor;
+  }
+
+  .glass-panel {
+    background: linear-gradient(180deg, rgba(10, 12, 24, 0.45), rgba(10, 12, 24, 0.6));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--color-line);
+    border-radius: 18px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(120deg, var(--color-accent-cyan), var(--color-accent-violet) 60%, var(--color-accent-pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-line);
+    background: rgba(231, 233, 245, 0.03);
+    color: var(--color-ink-soft);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.01em;
+    transition: transform 220ms ease, color 220ms ease, border-color 220ms ease, background 220ms ease, box-shadow 220ms ease;
+    will-change: transform;
+  }
+  .chip:hover {
+    color: var(--color-ink);
+    border-color: var(--chip-color, var(--color-accent-cyan));
+    background: color-mix(in srgb, var(--chip-color, var(--color-accent-cyan)) 10%, transparent);
+    box-shadow: 0 0 28px -8px var(--chip-color, var(--color-accent-cyan));
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

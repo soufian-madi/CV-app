@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Personal assets — not committed; copy into public/ manually
+public/portrait.jpg
+public/*.pdf
+
+# Test coverage
+coverage
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editor
+*.local
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Vite cache
+.vite
+
+# OS
+.DS_Store
+Thumbs.db

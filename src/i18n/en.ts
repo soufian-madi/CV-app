@@ -1,0 +1,127 @@
+export default {
+  nav: {
+    about: 'Profile',
+    skills: 'Skills',
+    experience: 'Experience',
+    education: 'Education',
+    languages: 'Languages',
+    contact: 'Contact',
+    downloadCv: 'Resume',
+    languageLabel: 'Choose language',
+    primaryNav: 'Primary navigation',
+  },
+  hero: {
+    greeting: "Hi, I'm",
+    name: 'Soufian Madi',
+    role: 'Fullstack Software Engineer',
+    location: 'Munich · Germany',
+    tagline: 'Building scalable cloud web apps with Vue, TypeScript & Spring Boot.',
+    scrollCue: 'Scroll',
+    swipeCue: 'Swipe',
+    available: 'Available for new projects',
+  },
+  about: {
+    heading: 'Profile',
+    body: 'Fullstack software engineer with several years of experience building scalable, cloud-based web applications. Expert in Java, TypeScript, Spring Boot, Vue.js, REST APIs, agile methods (Scrum, XP), test-driven development and CI/CD. Comfortable in cross-functional teams and customer-facing engagements, continuously improving processes and tooling. Mentoring and championing engineering best practices are core strengths.',
+    portraitAlt: 'Portrait photo of Soufian Madi',
+    statYears: 'Years of professional experience',
+    statLanguages: 'Languages spoken',
+    statClients: 'Million users served',
+  },
+  skills: {
+    heading: 'Technical skills',
+    subheading: 'Hover a skill to nudge the fluid behind it.',
+    subheadingTouch: 'Tap a skill to trigger the fluid.',
+    categories: {
+      languages: 'Languages',
+      frameworks: 'Frameworks & Technologies',
+      engineering: 'Software Engineering',
+      cloud: 'Cloud & DevOps',
+      testing: 'Testing & Automation',
+      ai: 'AI-augmented Development',
+    },
+  },
+  experience: {
+    heading: 'Experience',
+    present: 'Present',
+    entries: {
+      andrena: {
+        title: 'Fullstack Software Engineer',
+        company: 'andrena objects ag',
+        location: 'Munich, Germany',
+        period: '01/2021 — Present',
+        summary:
+          'Building a high-traffic web platform for a major enterprise serving several million users — alongside multiple cross-functional teams.',
+        bullets: [
+          'Develop and maintain scalable cloud web apps and distributed systems with Java, Spring Boot, TypeScript, React and Vue.js using TDD, Clean Code and Extreme Programming (XP).',
+          'Implement REST APIs, consumer-driven contracts and end-to-end tests following TDD and Clean Code principles.',
+          'Build and maintain CI/CD pipelines (GitLab CI) and containerisation with Docker.',
+          'Consult clients on agile software-engineering projects and contribute within cross-functional teams.',
+          'Run code reviews, unit tests and continuously improve development processes and tooling.',
+          'Contribute to architecture decisions for highly specialised, maintainable systems.',
+          'Mentor new team members and champion engineering best practices.',
+        ],
+      },
+      bamf: {
+        title: 'Interpreter (Arabic / German / English)',
+        company: 'Federal Office for Migration and Refugees (BAMF)',
+        location: 'Germany',
+        period: '11/2016 — 11/2018',
+        summary: 'Alongside university — interpreting in sensitive official hearings.',
+        bullets: [
+          'Verbal and written translation between Arabic, German and English.',
+          'Supported official hearings and administrative procedures.',
+          'Bridged communication between authorities and refugees in sensitive contexts.',
+        ],
+      },
+    },
+  },
+  education: {
+    heading: 'Education & Certifications',
+    entries: {
+      bsc: {
+        title: 'B.Sc. Aerospace Computer Science',
+        institution: 'Julius-Maximilians-Universität Würzburg',
+        period: '2016 — 2019',
+      },
+      vue: {
+        title: 'Vue.js Developer Certification',
+        institution: 'certificates.dev',
+        period: '2024',
+      },
+      agile: {
+        title: 'Agile Product Management Training',
+        institution: 'andrena objects ag',
+        period: '2024',
+      },
+    },
+  },
+  languages: {
+    heading: 'Languages',
+    native: 'Native',
+    levels: {
+      de: 'German',
+      ar: 'Arabic',
+      en: 'English',
+      he: 'Hebrew',
+    },
+  },
+  interests: {
+    heading: 'Interests',
+    items: ['Hiking', 'Skiing', 'Tech', 'Finance', 'Mixology', 'Gaming'],
+  },
+  contact: {
+    heading: 'Contact',
+    subheading: "Let's talk — German, English, or Arabic.",
+    emailLabel: 'Email',
+    phoneLabel: 'Phone',
+    linkedinLabel: 'LinkedIn',
+    addressLabel: 'Based in',
+    copy: 'Copy',
+    copied: 'Copied',
+    cta: 'Send me an email',
+  },
+  motion: {
+    reduced: 'Reduced motion',
+  },
+};
