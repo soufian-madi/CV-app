@@ -78,6 +78,7 @@ export default {
   },
   education: {
     heading: 'Bildung & Zertifikate',
+    downloadCert: 'Zertifikat herunterladen',
     entries: {
       bsc: {
         title: 'Bachelor of Science — Luft- und Raumfahrtinformatik',
@@ -88,6 +89,11 @@ export default {
         title: 'Vue.js Developer Certification',
         institution: 'certificates.dev',
         period: '2024',
+      },
+      scrum: {
+        title: 'Professional Scrum Master I',
+        institution: 'Scrum.org',
+        period: '2025',
       },
       agile: {
         title: 'Agile Product Management Weiterbildung',

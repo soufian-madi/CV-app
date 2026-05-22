@@ -34,9 +34,9 @@ describe('CV data', () => {
     }
   });
 
-  it('lists exactly two experience entries and three education items', () => {
+  it('lists exactly two experience entries and four education items', () => {
     expect(EXPERIENCE_ORDER).toEqual(['andrena', 'bamf']);
-    expect(EDUCATION_ORDER).toEqual(['bsc', 'vue', 'agile']);
+    expect(EDUCATION_ORDER).toEqual(['bsc', 'vue', 'scrum', 'agile']);
   });
 
   it('declares four language proficiencies including German and Arabic as native', () => {

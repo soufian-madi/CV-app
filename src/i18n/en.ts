@@ -78,6 +78,7 @@ export default {
   },
   education: {
     heading: 'Education & Certifications',
+    downloadCert: 'Download Certificate',
     entries: {
       bsc: {
         title: 'B.Sc. Aerospace Computer Science',
@@ -88,6 +89,11 @@ export default {
         title: 'Vue.js Developer Certification',
         institution: 'certificates.dev',
         period: '2024',
+      },
+      scrum: {
+        title: 'Professional Scrum Master I',
+        institution: 'Scrum.org',
+        period: '2025',
       },
       agile: {
         title: 'Agile Product Management Training',

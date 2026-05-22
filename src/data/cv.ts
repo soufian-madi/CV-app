@@ -64,8 +64,13 @@ export const CATEGORY_COLOR: Record<SkillCategory, [number, number, number]> = {
 export type ExperienceKey = 'andrena' | 'bamf';
 export const EXPERIENCE_ORDER: readonly ExperienceKey[] = ['andrena', 'bamf'] as const;
 
-export type EducationKey = 'bsc' | 'vue' | 'agile';
-export const EDUCATION_ORDER: readonly EducationKey[] = ['bsc', 'vue', 'agile'] as const;
+export type EducationKey = 'bsc' | 'vue' | 'scrum' | 'agile';
+export const EDUCATION_ORDER: readonly EducationKey[] = ['bsc', 'vue', 'scrum', 'agile'] as const;
+export const CERT_DOWNLOADS: Partial<Record<EducationKey, string>> = {
+  vue: '/vue-cert.pdf',
+  scrum: '/psm-cert.pdf',
+  agile: '/apm-cert.pdf',
+} as const;
 
 export type LanguageKey = 'de' | 'ar' | 'en' | 'he';
 export interface LanguageProficiency {
