@@ -120,9 +120,12 @@ watch(locale, () => {
         {{ t('hero.greeting') }}
       </p>
 
-      <h1 ref="nameRef" class="hero__name">
-        {{ t('hero.name') }}
-      </h1>
+      <div class="hero__name-wrap">
+        <h1 ref="nameRef" class="hero__name">
+          {{ t('hero.name') }}
+        </h1>
+        <span class="hero__easter-egg" aria-hidden="true">{{ t('hero.easterEgg') }}</span>
+      </div>
 
       <p class="hero__role">
         <span>{{ t('hero.role') }}</span>
@@ -304,7 +307,33 @@ watch(locale, () => {
   color: var(--color-ink-muted);
 }
 
+.hero__name-wrap {
+  position: relative;
+}
+
+.hero__easter-egg {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
+  letter-spacing: 0.05em;
+  color: transparent;
+  cursor: default;
+}
+.hero__easter-egg::selection {
+  color: var(--color-ink-soft);
+  background-color: color-mix(in srgb, var(--color-accent-violet) 30%, transparent);
+}
+
 .hero__cue--swipe { display: none; }
+
+@media (min-width: 900px) {
+  .hero__easter-egg {
+    margin-right: 7rem;
+  }
+}
 
 @media (max-width: 899px) {
   .hero__cue--scroll { display: none; }

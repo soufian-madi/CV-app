@@ -19,6 +19,7 @@ export default {
     scrollCue: 'Scroll',
     swipeCue: 'Swipe',
     available: 'Available for new projects',
+    easterEgg: "and you're not",
   },
   about: {
     heading: 'Profile',
