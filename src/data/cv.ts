@@ -87,11 +87,11 @@ export const LANGUAGE_PROFICIENCIES: readonly LanguageProficiency[] = [
 ] as const;
 
 export const CONTACT = {
-  email: 'set.email.in@env.file',
-  phone: '+123456789',
-  phoneTel: '+123456789',
+  email: import.meta.env.VITE_EMAIL ?? 'set.email.in@env.file',
+  phone: import.meta.env.VITE_PHONE ?? '+123456789',
+  phoneTel: import.meta.env.VITE_PHONE_TEL ?? '+123456789',
   linkedin: 'https://www.linkedin.com/in/soufian-madi',
   linkedinHandle: 'linkedin.com/in/soufian-madi',
   address: 'Neuhausen-Nymphenburg, München',
   cvDownload: '/soufian-madi-cv.pdf',
-} as const;
+};
