@@ -20,4 +20,7 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.glsl', '**/*.vert', '**/*.frag'],
+  build: {
+    target: 'baseline-widely-available',
+  },
 });
